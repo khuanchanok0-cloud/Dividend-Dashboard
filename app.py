@@ -245,7 +245,7 @@ with colR:
 
         st.markdown('<div class="card"><div class="card-title dot-pink">Score Breakdown (F1–F7)</div>', unsafe_allow_html=True)
         factors = ["F1","F2","F3","F4","F5","F6","F7"]
-        factor_disp = [FACTOR_LABELS[f] for f in factors]
+        factor_disp = [f"{f} - {FACTOR_LABELS[f]}" for f in factors]
         values = [srow[f] for f in factors]
         fig = go.Figure(data=go.Scatterpolar(r=values+[values[0]], theta=factor_disp+[factor_disp[0]], fill="toself",
                                               line_color="#39c5cf", fillcolor="rgba(57,197,207,0.25)"))
