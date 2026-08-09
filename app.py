@@ -8,6 +8,7 @@ st.set_page_config(page_title="Dividend Quality & Earnings Analytics", layout="w
 
 st.markdown("""
 <style>
+.stApp { background-color: #0d1117; }
 .eyebrow { color:#3fb950; font-size:12px; letter-spacing:2px; font-weight:700; text-transform:uppercase; }
 .main-title { font-size:28px; font-weight:800; color:#fff; margin-top:2px; }
 .subtitle { color:#8b949e; font-size:13px; margin-top:2px; }
