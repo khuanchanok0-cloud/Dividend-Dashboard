@@ -1,0 +1,12 @@
+import os
+os.makedirs(".streamlit", exist_ok=True)
+with open(".streamlit/config.toml", "w") as f:
+    f.write("""
+[theme]
+base="dark"
+backgroundColor="#0d1117"
+secondaryBackgroundColor="#161b22"
+textColor="#e6edf3"
+primaryColor="#58a6ff"
+""")
+print("ตั้งธีมมืดเรียบร้อย")
